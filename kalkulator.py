@@ -24,6 +24,8 @@ def int_input(text):
             number = int(input(f"{text}"))
             if number > 0:
                 return number
+            else:
+                print("to nie jest dodatnia liczba całkowita, wprowadz jeszcze raz.")
         except ValueError:
             print("to nie jest dodatnia liczba całkowita, wprowadz jeszcze raz.")
 
@@ -76,7 +78,7 @@ def multiplication():
     for i in range(multip_number):
         number = number_input(f"Podaj składnik {i+1}. ")
         numbers_list.append(number)
-        result = 1
+    result = 1
     for number in numbers_list:
         result = result * number
 
