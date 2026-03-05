@@ -38,11 +38,11 @@ def operation_components():
     return number_1, number_2
 
 def operation_choosing():
+    """"
+    Funkcja wyboru operacji przez użytkownia
+    sprawdza czy liczba wprowadzona odpowida dostępnym operacjom
+    """
     while True:
-        """"
-        Funkcja wyboru operacji przez użytkownia
-        sprawdza czy liczba wprowadzona odpowida dostępnym operacjom
-        """
         operation = int_input("Wprowadz liczbę: ")
         if operation  in {1, 2, 3, 4}:
             return operation
@@ -124,8 +124,6 @@ if __name__ == "__main__":
         elif operation == 4:
             division()
         
-        next = input("chcesz wykonać następne działanie? wpisz T, chcesz zakończyć wpisz cokolwiek ")
-        if next.lower() != "t":
+        once_again = input("chcesz wykonać następne działanie? wpisz T, chcesz zakończyć wpisz cokolwiek ")
+        if once_again.lower() != "t":
             break
-    
-
