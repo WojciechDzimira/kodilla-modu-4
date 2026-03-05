@@ -114,16 +114,15 @@ while True:
     operation = operation_choosing()
     if operation == 1:
         addition()  
-    if operation == 2:
+    elif operation == 2:
         subtraction()
-    if operation == 3:
+    elif operation == 3:
         multiplication()
-    if operation == 4:
+    elif operation == 4:
         division()
     
-    exit = input("chcesz wykonać następne działanie? wpisz T, chcesz zakończyć wpisz cokolwiek ")
-    if exit.lower() == "t":
-        pass
-    else:
+    next = input("chcesz wykonać następne działanie? wpisz T, chcesz zakończyć wpisz cokolwiek ")
+    if next.lower() != "t":
         break
+   
 
